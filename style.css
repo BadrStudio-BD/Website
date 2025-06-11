@@ -47,18 +47,43 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/bd.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #000000;
+}
+
+.main-contenr {
+    background-color: #000000;
+    margin-top: 80px;
+    margin:70px;
+}
+
+.about {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 .text_an {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #eeeeee; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .15em solid #eeeeee;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
@@ -73,7 +98,6 @@ header {
   from, to { border-color: transparent }
   50% { border-color: #eeeeee; }
 }
-
 
 .main h2 {
     color: #eeeeee;
@@ -99,8 +123,8 @@ header {
 }
 
 .main-btn {
-    color: #fff;
-    background-color: #121212;
+    color: #121212;
+    background-color: #eeeeee;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -113,9 +137,13 @@ header {
 }
 
 .main-btn:hover {
-    background-color: #121212;
+    background-color: #eeeeee;
     transform: scale(1.1);
         transition: 3s;
+}
+
+.bd {
+    width: 25px;
 }
 
 .social-icons {
@@ -128,31 +156,19 @@ header {
     width: 50px;
 }
 
-.con {
-    margin-top: 80px;
-    margin:70px;
-}
-
 .title {
     display: flex;
     justify-content: center;
-    color: #121212;
+    color: #eeeeee;
+    background-color: #000000;
     font-size: 2.2em;
     font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .card {
     background-color: #fff;
     width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
@@ -190,58 +206,18 @@ header {
     border-radius: 5px;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-}
-
-.Contact {
-    display: flex;
-    justify-content: center;
-}
-
-.input {
-    border-radius: 2px;
-    border: none;
-    width: 90%;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    background-color: #363636;
-    color: #aeaeae;
-}
-
-.input-btn {
-    border-radius: 2px;
-    border: none;
-    width: 60%;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    background-color: #292929;
-    color: #aeaeae;
-}
-
-.footer {
-    background-color: #0000161d;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
 }
 
 .footer-title span {
-    color: #121212;
+    color: #eeeeee;
 }
 
 .footer .social-icons a{
     font-size: 1.3em;
-    padding: 0 10px 0 0;
+    padding: 0 5px 0 0;
 }
 
 
