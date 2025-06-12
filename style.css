@@ -235,4 +235,33 @@ header {
 }
 
 
+/* 1. ضبط موضع وحجم الصورة */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* مسافة بين العناصر */
+  padding: 1rem;
+}
+
+header .header-bounce {
+  width: 100px;      /* حجم مبدئي */
+  cursor: pointer;   /* للفأرة */
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* 2. تعريف حركة القفز والارتداد */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-60px); /* ارتفاع القفزة */
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-30px); /* ارتداد أصغر */
+  }
+}
 
