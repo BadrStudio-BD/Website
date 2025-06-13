@@ -1,268 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/bd.png" />
-  <title>BadrStudio-BD</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #000;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      color: white;
-      font-size: 24px;
-      text-decoration: none;
-    }
-
-    .navigation a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-
-    .main {
-      padding: 60px 20px;
-      background-color: #111;
-      color: white;
-    }
-
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .text-section {
-      max-width: 500px;
-    }
-
-    .text-section h2 {
-      font-size: 48px;
-    }
-
-    .text-section h2 span {
-      color: orange;
-    }
-
-    .text-section h3 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .main-btn {
-      display: inline-block;
-      background: orange;
-      color: white;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .social-icons img {
-      width: 32px;
-      margin: 0 5px;
-    }
-
-    .image-section img.bounce-image {
-      width: 300px;
-      animation: bounce 2s ease-in-out infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      25% {
-        transform: translateY(-60px);
-      }
-      50% {
-        transform: translateY(0);
-      }
-      75% {
-        transform: translateY(-30px);
-      }
-    }
-
-    .title {
-      text-align: center;
-      margin: 50px 0 20px;
-      color: white;
-    }
-
-    section.taem, section.Taem, section.about, section.contact {
-      padding: 40px 20px;
-      background: #1a1a1a;
-      color: white;
-    }
-
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      background: #222;
-      border-radius: 10px;
-      padding: 20px;
-      width: 280px;
-      text-align: center;
-    }
-
-    .icons img.icon {
-      width: 64px;
-    }
-
-    .img {
-      width: 80px;
-      border-radius: 50%;
-      margin: 10px;
-    }
-
-    .about-img {
-      width: 100px;
-    }
-
-    .footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/bd.png">
+    <title>BadrStudio-BD</title>
 </head>
 
 <body>
-  <header>
-    <a href="#home" class="logo">BD</a>
-    <nav class="navigation">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#team">Team</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="main" id="home">
-    <div class="main-content">
-      <div class="text-section">
-        <h2>BadrStudio<br><span>Studio</span></h2>
-        <h3 class="text_an">Studio games , webs , apps</h3>
-        <a href="#works" class="main-btn">View work</a>
-        <div class="social-icons">
-          <a href="https://github.com/BadrStudio-BD"><img src="images/github-2.webp" /></a>
-          <a href="https://discord.gg/jKpz3mfu6T"><img src="images/discord-2.webp" /></a>
-          <a href="https://www.instagram.com/badrstudio.bd/"><img src="images/instagram-2.webp" /></a>
-          <a href="https://www.tiktok.com/@badrstudio.bd"><img src="images/tiktok-2.webp" /></a>
-          <a href="https://www.youtube.com/@BadrStudio.BD2025"><img src="images/youtube-2.webp" /></a>
-        </div>
-      </div>
-      <div class="image-section">
-        <img src="images/bd.png" alt="BD Logo" class="bounce-image" />
-      </div>
-    </div>
-  </section>
+    <header>
+        <a href="#home" class="logo">BD</a>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <h2 class="title" id="services">Services</h2>
-  <section class="taem">
-    <div class="content">
-      <div class="card">
-        <div class="icons">
-          <img class="icon" src="images/mobile-development.webp" />
+    <section class="main" id="home">
+        <div class="main-contenr" >
+            <h2>BadrStudio<br><span>Studio</span></h2>
+            <h3 class="text_an">Studio games , webs , apps</h3>
+            <a href="#works" class="main-btn">View work</a>
+              <div class="social-icons">
+                <a href="https://github.com/BadrStudio-BD"><img src="images/github-2.webp"></a>
+                <a href="https://discord.gg/jKpz3mfu6T"><img src="images/discord-2.webp"></a>
+                <a href="https://www.instagram.com/badrstudio.bd/"><img src="images/instagram-2.webp"></a>
+                <a href="https://www.tiktok.com/@badrstudio.bd"><img src="images/tiktok-2.webp"></a>
+                <a href="https://www.youtube.com/@BadrStudio.BD2025"><img src="images/youtube-2.webp"></a>
+            </div>
         </div>
-        <div class="info">
-          <h3>Apps Development</h3>
-          <p>Developing apps and games with the best quality for the user</p>
-        </div>
+        <div class="image-section">
+        <img src="images/bd.png" alt="BD Logo" class="bounce-image">
       </div>
-      <div class="card">
-        <div class="icons">
-          <img class="icon" src="images/game-controller.webp" />
-        </div>
-        <div class="info">
-          <h3>Games Development</h3>
-          <p>Developing games and games with the best quality for the user</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="icons">
-          <img class="icon" src="images/edit.webp" />
-        </div>
-        <div class="info">
-          <h3>Website Development</h3>
-          <p>Developing websites and games with the best quality for the user</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="icons">
-          <img class="icon" src="images/video.webp" />
-        </div>
-        <div class="info">
-          <h3>Video Production</h3>
-          <p>Record and shoot videos taking into consideration proper settings, followed by production & post-production work</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <h2 class="title" id="team">Team</h2>
-  <section class="Taem">
-    <div class="content">
-      <div class="card">
-        <h2>Team</h2>
-        <div class="images">
-          <img class="img" src="images/Am.png" />
-          <img class="img" src="images/Ha.png" />
-          <img class="img" src="images/4T.png" />
-        </div>
-      </div>
-    </div>
-  </section>
+    <h2 class="title" id="services" >Services</h2>
+    <section class="services">
+        <div class="content">
 
-  <h2 class="title" id="about">About</h2>
-  <section class="about">
-    <div class="card">
-      <img class="about-img" src="images/bd.png" />
-      <div class="about-text">
-        <p>We’re an Arabic team passionate about programming, game development, and web design. Our mission is to collaborate, learn, and create outstanding projects that blend creativity and professionalism.</p>
-      </div>
-    </div>
-  </section>
+            <div class="card">
+                <div class="icons">
+                    <img class="icon" src="images/mobile-development.webp"/>
+                </div>
+                <div class="info">
+                    <h3>apps development</h3>
+                    <p>Developing apps and games with the best quality for the user</p>
+                </div>
+            </div>
 
-  <h2 class="title" id="contact">Let's work together</h2>
-  <section class="cards contact">
-    <div class="content">
-      <div class="card">
-        <div class="icons">
-          <img class="icon" src="images/email.webp" />
-        </div>
-        <div class="info">
-          <h3>Email</h3>
-          <p>badr.studio.bd@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="card">
+                <div class="icons">
+                    <img class="icon" src="images/game-controller.webp"/>
+                </div>
+                <div class="info">
+                    <h3>Games development</h3>
+                    <p>Developing games and games with the best quality for the user</p>
+                </div>
+            </div>
 
-  <footer class="footer">
-    <p class="footer-title">Copyrights @ <span>badrStudio.bd</span></p>
-  </footer>
+            <div class="card">
+                <div class="icons">
+                    <img class="icon" src="images/edit.webp">
+                </div>
+                <div class="info">
+                    <h3>Website development</h3>
+                    <p>Developing websites and games with the best quality for the user</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icons">
+                    <img class="icon" src="images/video.webp">
+                </div>
+
+                <div class="info">
+                    <h3>Video Production</h3>
+                    <p>Record and shoot videos taking into consideration proper settings, followed by production & post-production work</p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="title" id="team" >Ceo</h2>
+    <section class="Ceo">
+        <div class="content">
+            <div class="cards">
+
+                <div class="card">
+                     <h2>Ceo</h2>
+                     <div class="images">
+                        <img class="img" src="images/Am.png"/>
+                        <img class="img" src="images/Ha.png"/>
+                        <img class="img" src="images/4T.png"/>
+                     </div>
+                </div>
+
+                <div class="card">
+                    <h2>Ceo Software</h2>
+                    <div class="images">
+                        <img class="img" src="images/Am.png"/>
+                        <img class="img" src="images/Hm.png"/>
+                        <img class="img" src="images/Om.png"/>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Ceo Games</h2>
+                    <div class="images">
+                        <img class="img" src="images/Ha.png"/>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Ceo Videos</h2>
+                    <div class="images">
+                        <img class="img" src="images/4T.png"/>
+                        <img class="img" src="images/Hm.png"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h2 class="title" id="about" >About</h2>
+    <section class="about">
+        <div class="card" >
+        <img class="about-img" src="images/bd.png"/>
+        <div class="about-text">
+            <p>We’re an Arabic team passionate about programming, game development, and web design. Our mission is to collaborate, learn, and create outstanding projects that blend creativity and professionalism.</p>
+        </div>
+        </div>
+    </section>
+
+    <h2 class="title" id="contact">Let's work together</h2>
+    <section class="cards contact">
+        <div class="content">
+            <div class="card">
+                <div class="icons">
+                    <img class="icon" src="images/email.webp">
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>badr.studio.bd@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>badrStudio.bd</span></p>
+    </footer>
+
 </body>
 </html>

@@ -1,20 +1,108 @@
-/* ترتيب عناصر الهيدر */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #111;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
 }
 
-/* اللوجو المتحرك */
+body {
+    background-color: #000;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #363636;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #121212;
+    text-decoration: solid;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-contenr {
+    margin-top: 80px;
+    margin:70px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.Ceo {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer {
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.text_an {
+    overflow: hidden;
+    border-right: .15em solid #eeeeee;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
 .header-bounce {
   width: 100px;
   height: auto;
   animation: bounce 2s ease-in-out infinite;
 }
 
-/* حركة القفز والارتداد */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -30,18 +118,151 @@ header {
   }
 }
 
-/* تحسين مظهر القائمة */
-.navigation a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-/* خلفية للصفحة كاملة */
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #000;
-  color: white;
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #eeeeee; }
 }
+
+.main h2 {
+    color: #eeeeee;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #aeaeae;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #eeeeee;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #121212;
+    background-color: #eeeeee;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #eeeeee;
+    transform: scale(1.1);
+        transition: 3s;
+}
+
+.bd {
+    width: 50px;
+}
+
+.social-icons {
+    width: 50px;
+    display: flex;
+}
+
+.social-icons a img {
+    padding-left: 9px;
+    width: 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #eeeeee;
+    background-color: #000000;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.502);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+        transition: 2s;
+}
+
+.card .icons {
+    color: #292929;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 64px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #292929;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.about-text {
+    padding-bottom: 10px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.images {
+    width: 370px;
+}
+
+.img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #eeeeee;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 5px 0 0;
+}
+
+
+
